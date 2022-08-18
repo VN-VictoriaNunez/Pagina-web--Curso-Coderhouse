@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa';
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ID > Class > Etiquetas */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap');
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+/*Mobile Last*/
+/* General */
+body {
+    background-color: #fae8cd;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #e68627;
+    margin: auto;
+}
+
+.grid-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin: 0 auto;
+    list-style-type: none;
+    border-bottom: #4d2b02 2px solid;
+}
+
+.menu li {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    display: inline;
+    margin: 0px 15px 15px 15px;
+}
+
+.menu li a:hover {
+    color: #4d2b02;
+}
+
+/* Main */
+.titulo {
+    color: #4d2b02;
+    font-size: 35px;
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* .imagen {
+    width: 30%;
+    margin: 0px 10px 10px 10px;
+} */
+.imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px 10px 10px 10px;
+    overflow: hidden;
+    border: 10px solid #4d2b028d;
+    position: absolute;
+}
+
+h3 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    bottom: 100PX;
+    margin: 0 auto;}
+
+.sectionImagen {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.divImagen {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffa500;
+    margin: 20px;
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+
+}
+
+.divImagen:hover {
+    opacity: 1;
+}
+
+
+.texto {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #4d2b02;
+    margin: 20px;
+    text-align: justify;
+}
+
+.form {
+    text-align: center;
+    background-color: #4d2b02;
+    color: #e68627;
+    width: 25%;
+    height: 425px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+input,
+select {
+    margin: 4px;
+    border-radius: 3px;
+    border: cornsilk solid 1px;
+    background-color: cornsilk;
+    padding: 9px 15px;
+}
+
+/* .checkbox {
+   background-color: #e68627;
+} */
+[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    border: solid 1px #e68627;
+    margin: 2px 2px 0 2px;
+    position: relative;
+    padding: 0;
+}
+
+[type=checkbox]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ffa500;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+input:hover {
+    color: #e68627;
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e68627;
+    height: 670px;
+    width: 400px;
+    padding: 15px 30px;
+    margin: 10px 20px 20px;
+    border-radius: 3px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "fotoUno fotoDos  fotoTres"
+        "fotoUno fotoDos  fotoTres"
+        "fotoUno fotoDos  fotoTres";
+    max-width: 75%;
+    margin: 15px auto 30px;
+}
+
+.fotoUno {
+    grid-area: fotoUno;
+}
+
+.fotoDos {
+    grid-area: fotoDos;
+}
+
+.fotoTres {
+    grid-area: fotoTres;
+}
+
+
+/* Footer */
+
+.footer {
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    grid-area: footer;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    background-color: #4d2b02;
+}
+
+footer span ul li {
+    margin: 0 12px 10px 10px;
+}
+
+.redes {
+    position: relative;
+    bottom: 35px;
+}
+
+.footerLogo {
+    width: 80px;
+    position: relative;
+    right: 25px;
+    bottom: 25px;
+}
+
+footer p {
+    color: #fae8cd;
+    font-size: 12px;
+    margin-bottom: 15px;
+
+}
+
+.hoverFooter {
+    position: relative;
+    padding: 0.2rem 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hoverFooter::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2PX;
+    width: 100%;
+    background-color: #ffa500;
+    transform: translateX(-105%);
+}
+
+.hoverFooter:hover::before {
+    transform: translateX(0);
+}
+
+/* Medias Queris */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 0.6fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "fotoUno"
+            "fotoDos"
+            "fotoTres";
+        justify-content: center;
+    }
+
+    .titulo {
+        font-size: 30px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        font-size: 18px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .menu {
+        margin: 5px;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:425px) {
+    .footer {
+        display: inline;
+    }
+
+    .redes {
+        position: static;
+    }
+
+    .footerLogo {
+        width: 60px;
+        margin: 5px auto;
+        position: static;
+    }
+
+    .imagen {
+        width: 60%;
+    }
+}
