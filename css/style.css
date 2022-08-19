@@ -111,7 +111,8 @@ h3 {
     font-size: 18px;
     position: absolute;
     bottom: 100PX;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 .sectionImagen {
     position: relative;
@@ -222,11 +223,12 @@ input:hover {
     padding: 15px 30px;
     margin: 10px 20px 20px;
     border-radius: 3px;
+    justify-content: space-evenly;
 }
 
 
 .galeriaScroll {
-    height: 450px;
+    height: 500px;
     margin-top: 15px;
 }
 
@@ -325,15 +327,19 @@ footer p {
             "fotoTres";
         justify-content: center;
     }
+
     .card-container {
         width: 320px;
     }
+
     .imgBlog {
         height: 350px;
     }
-.blog {
-    height: 500px;
-}
+
+    .blog {
+        height: 500px;
+    }
+
     .titulo {
         font-size: 30px;
         width: 75%;
@@ -359,6 +365,7 @@ footer p {
     .flex {
         flex-wrap: wrap;
     }
+
     .divImagen {
         opacity: 1;
     }
