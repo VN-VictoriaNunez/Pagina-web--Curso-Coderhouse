@@ -197,6 +197,8 @@ input:hover {
     color: #e68627;
 }
 
+
+
 .flex {
     display: flex;
     margin-top: 20px;
@@ -215,12 +217,13 @@ input:hover {
     flex-direction: column;
     align-items: center;
     background-color: #e68627;
-    height: 670px;
-    width: 400px;
+    height: 700px;
+    width: 450px;
     padding: 15px 30px;
     margin: 10px 20px 20px;
     border-radius: 3px;
 }
+
 
 .galeriaScroll {
     height: 450px;
@@ -322,7 +325,15 @@ footer p {
             "fotoTres";
         justify-content: center;
     }
-
+    .card-container {
+        width: 320px;
+    }
+    .imgBlog {
+        height: 350px;
+    }
+.blog {
+    height: 500px;
+}
     .titulo {
         font-size: 30px;
         width: 75%;
@@ -347,6 +358,9 @@ footer p {
 
     .flex {
         flex-wrap: wrap;
+    }
+    .divImagen {
+        opacity: 1;
     }
 }
 
