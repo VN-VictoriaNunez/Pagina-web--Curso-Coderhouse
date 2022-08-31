@@ -1,0 +1,32 @@
+/* Header */
+.header {
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    &__img {
+        margin: 15px;
+    }
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        margin: 0 auto;
+        list-style-type: none;
+        border-bottom: $marron 2px solid;
+    }
+
+    &__ul {
+        li {
+            font-family: 'Montserrat';
+            font-size: 22px;
+            display: inline;
+            margin: 0px 15px 15px 15px;
+            a:hover {
+                color: $marron;
+            }
+        }
+    }
+
+}
+

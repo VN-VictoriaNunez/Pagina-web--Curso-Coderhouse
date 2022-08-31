@@ -1,0 +1,295 @@
+
+@import "./base/base";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/medias";
+@import "./layout/forms";
+
+/* Main */
+.titulo {
+    color: #4d2b02;
+    font-size: 35px;
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* .imagen {
+    width: 30%;
+    margin: 0px 10px 10px 10px;
+} */
+.imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px 10px 10px 10px;
+    overflow: hidden;
+    border: 10px solid #4d2b028d;
+    position: absolute;
+}
+
+h3 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    bottom: 100PX;
+    margin: 0 auto;
+}
+
+.sectionImagen {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.divImagen {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffa500;
+    margin: 20px;
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+
+}
+
+.divImagen:hover {
+    opacity: 1;
+}
+
+
+.texto {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #4d2b02;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e68627;
+    height: 700px;
+    width: 450px;
+    padding: 15px 30px;
+    margin: 10px 20px 20px;
+    border-radius: 3px;
+    justify-content: space-evenly;
+}
+
+
+.galeriaScroll {
+    height: 500px;
+    margin-top: 15px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "fotoUno fotoDos  fotoTres"
+        "fotoUno fotoDos  fotoTres"
+        "fotoUno fotoDos  fotoTres";
+    max-width: 75%;
+    margin: 15px auto 30px;
+}
+
+.fotoUno {
+    grid-area: fotoUno;
+}
+
+.fotoDos {
+    grid-area: fotoDos;
+}
+
+.fotoTres {
+    grid-area: fotoTres;
+}
+
+/*  Bootstrap */
+
+.card {
+    background-color: #e68627;
+    color: #4d2b02;
+    border: 0;
+}
+
+.btn {
+    background-color: cornsilk;
+    color: #4d2b02;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: cornsilk;
+    color: #e68627;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* Footer */
+
+// .footer {
+//     list-style-type: none;
+//     padding: 10px;
+//     display: inline-block;
+//     grid-area: footer;
+//     font-family: 'Montserrat';
+//     font-size: 16px;
+//     background-color: #4d2b02;
+// }
+
+// footer span ul li {
+//     margin: 0 12px 10px 10px;
+// }
+
+// .redes {
+//     position: relative;
+//     bottom: 35px;
+// }
+
+// .footerLogo {
+//     width: 80px;
+//     position: relative;
+//     right: 25px;
+//     bottom: 50px;
+//     vertical-align: unset;
+// }
+
+// footer p {
+//     color: #fae8cd;
+//     font-size: 12px;
+//     margin-bottom: 15px;
+
+// }
+
+// .hoverFooter {
+//     position: relative;
+//     padding: 0.2rem 0;
+//     display: inline-block;
+//     overflow: hidden;
+// }
+
+// .hoverFooter:hover {
+//     color: #e68627;
+// }
+
+// .hoverFooter::before {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     height: 2PX;
+//     width: 100%;
+//     background-color: #ffa500;
+//     transform: translateX(-105%);
+// }
+
+// .hoverFooter:hover::before {
+//     transform: translateX(0);
+
+// }
+
+// /* Medias Queris */
+// @media (max-width: 768px) {
+//     .galeria {
+//         grid-template-columns: 0.6fr;
+//         grid-template-rows: 1fr 1fr 1fr;
+//         gap: 20px 0px;
+//         grid-template-areas:
+//             "fotoUno"
+//             "fotoDos"
+//             "fotoTres";
+//         justify-content: center;
+//     }
+
+//     .card-container {
+//         width: 320px;
+//     }
+
+//     .imgBlog {
+//         height: 350px;
+//     }
+
+//     .blog {
+//         height: 500px;
+//     }
+
+//     .titulo {
+//         font-size: 30px;
+//         width: 75%;
+//         margin: 0 auto;
+//     }
+
+//     .menu li {
+//         font-size: 18px;
+//     }
+
+//     .texto {
+//         font-size: 16px;
+//     }
+
+//     .menu {
+//         margin: 5px;
+//     }
+
+//     .form {
+//         width: 300px;
+//     }
+
+//     .flex {
+//         flex-wrap: wrap;
+//     }
+
+//     .divImagen {
+//         opacity: 1;
+//     }
+// }
+
+// @media (max-width:425px) {
+//     .footer {
+//         display: inline;
+//     }
+
+//     .redes {
+//         position: static;
+//     }
+
+//     .footerLogo {
+//         width: 60px;
+//         margin: 5px auto;
+//         position: static;
+//     }
+
+//     .imagen {
+//         width: 60%;
+//     }
+// }

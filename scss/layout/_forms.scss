@@ -1,0 +1,53 @@
+//Forms
+.form {
+    text-align: center;
+    background-color: $marron;
+    color: $naranja;
+    width: 25%;
+    height: 425px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 25px;
+
+
+
+}
+
+input,
+select {
+    margin: 7px;
+    border-radius: 3px;
+    border: cornsilk solid 1px;
+    background-color: cornsilk;
+    padding: 9px 15px;
+
+    &:hover {
+        color: #e68627;
+    }
+
+}
+
+
+/* .checkbox {
+   background-color: #e68627;
+} */
+[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: solid 1px #e68627;
+    margin: 2px 2px 0 2px;
+    position: relative;
+    padding: 0;
+    &:checked::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #ffa500;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+}

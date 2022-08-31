@@ -1,0 +1,76 @@
+/* Medias Queris */
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 0.6fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "fotoUno"
+            "fotoDos"
+            "fotoTres";
+        justify-content: center;
+    }
+
+    .card-container {
+        width: 320px;
+    }
+
+    .imgBlog {
+        height: 350px;
+    }
+
+    .blog {
+        height: 500px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        font-size: 18px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .menu {
+        margin: 5px;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .divImagen {
+        opacity: 1;
+    }
+}
+
+@media (max-width:425px) {
+    .footer {
+        display: inline;
+
+        &__img {
+            width: 60px;
+            margin: 5px auto;
+            position: static;
+        }
+
+        &__ul--redes {
+            position: static;
+        }
+    }
+
+    .imagen {
+        width: 60%;
+    }
+}
