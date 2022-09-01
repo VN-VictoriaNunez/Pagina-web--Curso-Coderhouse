@@ -3,14 +3,11 @@
     text-align: center;
     background-color: $marron;
     color: $naranja;
-    width: 25%;
+    width: 26%;
     height: 425px;
     margin: 20px auto;
     padding: 25px;
     border-radius: 25px;
-
-
-
 }
 
 input,
@@ -24,13 +21,8 @@ select {
     &:hover {
         color: #e68627;
     }
-
 }
 
-
-/* .checkbox {
-   background-color: #e68627;
-} */
 [type=checkbox] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -41,6 +33,7 @@ select {
     margin: 2px 2px 0 2px;
     position: relative;
     padding: 0;
+
     &:checked::before {
         content: "";
         width: 10px;

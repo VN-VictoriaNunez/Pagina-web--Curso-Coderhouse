@@ -4,9 +4,11 @@
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+
     &__img {
         margin: 15px;
     }
+
     &__nav {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +24,7 @@
             font-size: 22px;
             display: inline;
             margin: 0px 15px 15px 15px;
+
             a:hover {
                 color: $marron;
             }
@@ -29,4 +32,3 @@
     }
 
 }
-

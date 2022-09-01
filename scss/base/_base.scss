@@ -9,10 +9,10 @@
 }
 
 //Variables
-$marron:#4d2b02;
+$marron: #4d2b02;
 $beige: #fae8cd;
-$amarillo:#ffa500;
-$naranja:#e68627;
+$amarillo: #ffa500;
+$naranja: #e68627;
 
 //Fonts
 
@@ -20,26 +20,58 @@ $naranja:#e68627;
 /* font-family: 'Comfortaa', cursive;
 font-family: 'Montserrat', sans-serif; */
 
-//Estructura General
+//Texto 
+.titulo {
+    color: $marron;
+    font-size: 2rem;
+}
 
+.tituloBlanco {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 100PX;
+    margin: 0 auto;
+}
+
+.texto {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    color: $marron;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+//Estructura General
 body {
     background-color: $beige;
     width: 100%;
     height: 100%;
-    .grid-container {
-        min-height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "header"
-            "contenido"
-            "footer";
-            main {
-                grid-area: contenido;
-                padding-top: 25px;
-                margin-top: 10px;
-            }
+}
+
+.grid-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+}
+
+.main {
+    grid-area: contenido;
+    padding-top: 25px;
+    margin-top: 10px;
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
     }
 }
 
@@ -49,3 +81,53 @@ a {
     margin: auto;
 }
 
+//Cards 
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $naranja;
+        height: 700px;
+        width: 450px;
+        padding: 15px 30px;
+        margin: 10px 20px 20px;
+        border-radius: 3px;
+        justify-content: space-evenly;
+    }
+}
+
+//Flex
+.flex {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  Bootstrap */
+.card {
+    background-color: $naranja;
+    color: $marron;
+    border: 0;
+}
+
+.btn {
+    background-color: $beige;
+    color: $marron;
+    border: 0;
+
+    &:hover {
+        background-color: $beige;
+        color: $marron;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}

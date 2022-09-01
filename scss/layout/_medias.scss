@@ -1,6 +1,15 @@
 /* Medias Queris */
 
 @media (max-width: 768px) {
+
+    .header__ul {
+        margin: 5px;
+
+        li {
+            font-size: 1.3rem;
+        }
+    }
+
     .galeria {
         grid-template-columns: 0.6fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -12,34 +21,26 @@
         justify-content: center;
     }
 
-    .card-container {
-        width: 320px;
-    }
-
-    .imgBlog {
+    .main__img--responsive {
         height: 350px;
     }
 
-    .blog {
+    .cards__container {
         height: 500px;
+
+        &--blog {
+            height: 600px;
+        }
     }
 
     .titulo {
-        font-size: 30px;
+        font-size: 2rem;
         width: 75%;
         margin: 0 auto;
     }
 
-    .menu li {
-        font-size: 18px;
-    }
-
     .texto {
-        font-size: 16px;
-    }
-
-    .menu {
-        margin: 5px;
+        font-size: 1rem;
     }
 
     .form {
@@ -50,7 +51,7 @@
         flex-wrap: wrap;
     }
 
-    .divImagen {
+    .section__div {
         opacity: 1;
     }
 }
@@ -68,9 +69,5 @@
         &__ul--redes {
             position: static;
         }
-    }
-
-    .imagen {
-        width: 60%;
     }
 }
