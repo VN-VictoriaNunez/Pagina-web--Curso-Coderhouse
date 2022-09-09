@@ -6,6 +6,7 @@
     text-align: center;
     box-sizing: border-box;
     line-height: normal;
+
 }
 
 //Variables
@@ -37,9 +38,10 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .texto {
+    @extend .titulo;
     font-family: 'Montserrat';
     font-size: 1.2rem;
-    color: $marron;
+   
     margin: 20px;
     text-align: justify;
 }
@@ -81,10 +83,13 @@ a {
     margin: auto;
 }
 
-//Cards 
-.cards {
+@mixin flexCenter {
     display: flex;
     justify-content: center;
+}
+//Cards 
+.cards {
+    @include flexCenter;
     flex-wrap: wrap;
 
     &__container {
@@ -103,10 +108,9 @@ a {
 
 //Flex
 .flex {
-    display: flex;
+    @include flexCenter;
     margin-top: 20px;
     align-items: center;
-    justify-content: center;
 }
 
 /*  Bootstrap */
@@ -130,4 +134,18 @@ a {
 ul {
     margin-bottom: 0;
     padding-left: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: $beige;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $naranja;
+    border-radius: 20px;
+    border: 2px solid $naranja;
 }
