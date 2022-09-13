@@ -3,7 +3,7 @@
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
   },
-  "name": "entregable-9---scss",
+  "name": "Tex Shop",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
@@ -16,11 +16,12 @@
     "type": "git",
     "url": "git+https://github.com/tota2012/coderhouse.git"
   },
-  "author": "",
+  "author": "TOTA",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tota2012/coderhouse/issues"
   },
   "homepage": "https://github.com/tota2012/coderhouse#readme",
-  "description": ""
+  "description": "Tienda de lanas naturales Uruguayas", 
+  "keywords": ["lanas" , "fibras" , "tejer"]
 }
