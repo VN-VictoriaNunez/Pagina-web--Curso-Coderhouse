@@ -3,7 +3,7 @@
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
   },
-  "name": "Tex Shop",
+  "name": "TexShop",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
