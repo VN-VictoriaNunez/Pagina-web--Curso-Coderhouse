@@ -16,10 +16,20 @@ select {
     border: cornsilk solid 1px;
     background-color: cornsilk;
     padding: 9px 15px;
+    width: 172px;
+    color: $marron;
+
+    &::placeholder {
+        color: $marron;
+    }
 
     &:hover {
         color: #e68627;
     }
+}
+
+.btnsmall {
+    width: 79px;
 }
 
 [type=checkbox] {

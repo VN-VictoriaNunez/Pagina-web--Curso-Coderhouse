@@ -1,0 +1,4 @@
+En las distintas páginas del mi web, realice las siguientes optimizaciones para el SEO:
+- Agregue descripciones: utilizando la etiqueta meta name description, agregué un enunciado que explica lo que se encuentra en esa página. Ej: “Catálogo de Lanas Uruguayas”
+- Palabras clave: usando la etiqueta meta name keywords, agregué distintas palabras clave que acompañarán a todas las páginas de mi sitio. Ej: "Lana, Merino, características, propiedades, Informacion"
+- Cambie los encabezado: realice cambios en los títulos (h1), para hacerlos más amigables con los buscadores

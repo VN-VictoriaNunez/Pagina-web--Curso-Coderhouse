@@ -23,8 +23,9 @@
         height: auto;
         border-radius: 10px;
     }
+
     .galeriaScroll {
-        border-radius: 12px ;
+        border-radius: 12px;
     }
 
     .cards__container {
@@ -34,21 +35,27 @@
             height: 600px;
         }
     }
-   
+
 
     .titulo {
         font-size: 2rem;
         width: 80%;
         margin: 0 auto;
+
+        &-blog {
+            width: 100%;
+        }
     }
+
     .texto {
         font-size: 1rem;
         width: 80%;
     }
+
     .textoCards {
         width: auto;
     }
-    
+
 
     .form {
         width: 300px;
